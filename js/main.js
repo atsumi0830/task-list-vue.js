@@ -4,7 +4,11 @@
    var vm = new Vue({
       el: '#app',
       data: {
-         name: 'Atsumi'
+         todos: [
+             'todo 1',
+             'todo 2',
+             'todo 3',
+         ]
       }
    });
 })();
