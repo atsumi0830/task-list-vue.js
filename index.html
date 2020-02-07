@@ -9,7 +9,10 @@
     <div id="app" class="container">
         <h1>やることリスト</h1>
         <ul>
-            <li v-for="todo in todos">{{ todo }}</li>
+            <li v-for="(todo, index) in todos">
+                {{ todo }}
+                <span @click="deleteItem(index)" class="deleteIcon">[✕]</span>
+            </li>
         </ul>
 
         <form @submit.prevent="addItem">

@@ -13,7 +13,7 @@ https://jp.vuejs.org/v2/guide/events.html
 
 ## v-on の省略形
 
-v-on:submit　はよく使われる表現だが、下記のように略すことができる
+v-on:submit　はよく使われる表現だが、下記のように "@" で略すことができる
 
 ```
 <form v-on:submit="addItem">
