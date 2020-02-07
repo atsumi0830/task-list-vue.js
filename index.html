@@ -4,11 +4,14 @@
     <meta charset="utf-8">
     <title>Vue Applications</title>
     <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="app">
+        <p>Hello {{ name }}</p>
+        <p><input type="text" v-model="name"></p>
+    </div>
     <!-- 開発バージョン、便利なコンソールの警告が含まれています -->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="js/main.js"></script>
-</head>
-<body>
-
 </body>
 </html>
