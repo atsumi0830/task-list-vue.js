@@ -27,3 +27,6 @@ v-bind:class にオブジェクトを渡すことでクラスを動的に切り�
 ## v-bind:class="{done: todo.isDone}"
 isDoneがtrueの場合、 class="done" をつける処理
 省略形　v-bind: class →　:class
+
+## v-if　と v-forの優先順位
+v-forのほうが先に処理されるため、v-ifが実行されないので、一緒に使わないようにする
