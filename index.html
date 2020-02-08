@@ -10,7 +10,8 @@
         <h1>やることリスト</h1>
         <ul>
             <li v-for="(todo, index) in todos">
-                {{ todo }}
+                <input type="checkbox" v-model="todo.isDone">
+                <span :class="{done: todo.isDone}">{{ todo.title }}</span>
                 <span @click="deleteItem(index)" class="deleteIcon">[✕]</span>
             </li>
         </ul>

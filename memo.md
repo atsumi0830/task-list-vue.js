@@ -20,3 +20,10 @@ v-on:submit　はよく使われる表現だが、下記のように "@" で略�
 ↓
 <form @submit="addItem">
 ```
+
+## v-bind
+v-bind:class にオブジェクトを渡すことでクラスを動的に切り替えることができる
+
+## v-bind:class="{done: todo.isDone}"
+isDoneがtrueの場合、 class="done" をつける処理
+省略形　v-bind: class →　:class
