@@ -9,8 +9,10 @@
     <div id="app" class="container">
         <h1>
             やることリスト
-            <span class="info">{{ remaining}} / {{todos.length}}</span>
+            <span class="info">{{ remaining.length}} / {{todos.length}}</span>
+            <button @click="butchDelete">一括削除</button>
         </h1>
+
         <ul v-if="todos.length">
             <li v-for="(todo, index) in todos">
                 <input type="checkbox" v-model="todo.isDone">

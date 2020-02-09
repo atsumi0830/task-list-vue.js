@@ -23,19 +23,25 @@
                 isDone: false
               };
               this.todos.push(item);
+              this.newItem = '';
           },
           deleteItem: function (index) {
               if(confirm('削除しますが、よろしいですか？')) {
                   this.todos.splice(index, 1);
               }
+          },
+          butchDelete: function () {
+              if(!confirm('完了済のタスクを削除しても良いですか？')) {
+                  return;
+              }
+              this.todos = this.remaining;
           }
       },
        computed: {
           remaining: function() {
-              var items = this.todos.filter(function (todo) {
+              return this.todos.filter(function (todo) {
                   return !todo.isDone;
-              })
-              return items.length;
+              });
           }
        }
 
