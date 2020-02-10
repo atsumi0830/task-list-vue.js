@@ -9,4 +9,4 @@ vue.jsを理解するために、タスクリストを実装してみる
 - タスク一括削除機能
 
 ## イメージ
-file:///var/folders/9v/r_vt932x1g1dvvrpb04z64r80000gn/T/com.skitch.skitch/DMD03649CD7-1971-4EB8-9545-630D480C3797/Vue_Applications.png
+![Vue_Applications](https://user-images.githubusercontent.com/22675852/74131706-4cda5000-4c28-11ea-8318-42073d055c70.png)
